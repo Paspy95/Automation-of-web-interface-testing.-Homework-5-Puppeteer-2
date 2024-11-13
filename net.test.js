@@ -55,7 +55,7 @@ describe("Booking tickets test", () => {
     expect(actual).contain("Получить код бронирования");
   });
 
-  test.only("The sad test", async () => {
+  test("The sad test", async () => {
     await clickElement(page, "nav[class='page-nav'] a:nth-child(1)");
     await clickElement(
       page,

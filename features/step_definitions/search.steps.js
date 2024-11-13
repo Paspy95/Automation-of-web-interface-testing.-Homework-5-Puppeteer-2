@@ -45,7 +45,7 @@ When(
 );
 
 Then(
-  "The place is already occupied, the button is not clickable",
+  "The place is already occupied, the button is not clickable {string}",
   async function (string) {
     return await buttonDisabled(this.page, string), { setTimeout: 20000 };
   }
